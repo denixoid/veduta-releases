@@ -4,11 +4,11 @@
         <title>Veduta</title>
         <item>
             <title>1.0</title>
-            <pubDate>Sat, 20 Jun 2026 19:07:16 +0200</pubDate>
-            <sparkle:version>202606201906</sparkle:version>
+            <pubDate>Sat, 20 Jun 2026 19:42:16 +0200</pubDate>
+            <sparkle:version>202606201941</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://denixoid.github.io/veduta-releases/Veduta-1.0.zip" length="1867169" type="application/octet-stream" sparkle:edSignature="DkrnPQ01tGAsQ5SbjfenhG+ko0lFgigJnmRJwcdDR8907X5AznyrmhaVxd6OrN9I3AWE3n0i+y4o6OSWC9bkAg=="/>
+            <enclosure url="https://denixoid.github.io/veduta-releases/Veduta-1.0.zip" length="1873172" type="application/octet-stream" sparkle:edSignature="acdhbGkokydtC6ygSTpxOPMqu1vlm+aOwZtH5hMzEBjkd3qFBnNg+bIrUQUnQ3RFhSCLMm5NXK7EeTZqSCaNAg=="/>
         </item>
     </channel>
 </rss>
