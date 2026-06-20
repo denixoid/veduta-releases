@@ -99,6 +99,12 @@
   .toggle-overlay .nm{font-weight:500;font-size:.8rem}
   .toggle-overlay .sw{width:34px;height:21px;border-radius:21px;background:#0a84ff;position:relative}
   .toggle-overlay .sw::after{content:"";position:absolute;width:17px;height:17px;border-radius:50%;background:#fff;top:2px;right:2px;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .dlg.panel{text-align:left}
+  .dlg .bigic{width:52px;height:52px;border-radius:12px;margin:2px auto 10px;display:block}
+  .dlg .field{background:#fff;border:1px solid #c7c7cc;border-radius:7px;padding:7px 9px;font-family:ui-monospace,Menlo,monospace;
+    font-size:.72rem;color:#1d1d1f;margin-bottom:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dlg .status{display:flex;align-items:center;gap:7px;font-size:.78rem;color:#1d1d1f}
+  .dlg .status .chk{width:15px;height:15px;border-radius:50%;background:#1FA39A;color:#fff;font-size:.62rem;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
   .band{background:linear-gradient(135deg,rgba(31,163,154,.13),rgba(31,163,154,.03));border:1px solid rgba(31,163,154,.25);
     border-radius:20px;padding:44px}
   .band h2{margin-bottom:12px}
@@ -184,9 +190,15 @@
     <ol class="steps">
       <li>
         <span class="badge">1</span>
-        <div>
+        <div class="txt">
           <h4>Download &amp; install</h4>
           <p>Open the installer above and click <strong>Continue → Install</strong>. Veduta lands in your Applications folder and opens right away — no security warnings to click through.</p>
+        </div>
+        <div class="dlg">
+          <img src="icon.png" alt="" class="bigic">
+          <div class="t">Install Veduta</div>
+          <div class="s">Veduta will be installed in your Applications folder.</div>
+          <div class="b go">Install</div>
         </div>
       </li>
       <li>
@@ -226,9 +238,14 @@
       </li>
       <li>
         <span class="badge">4</span>
-        <div>
+        <div class="txt">
           <h4>Choose where captures go</h4>
           <p>Open <strong>Settings → Destination</strong> and point Veduta at your folder — a NAS share like <code>smb://nas.local/Screenshots</code>, or any local folder. Done: it now captures on your schedule and delivers every frame, quietly from the menu bar.</p>
+        </div>
+        <div class="dlg panel">
+          <div class="cap">Where captures go</div>
+          <div class="field">smb://nas.local/Screenshots</div>
+          <div class="status"><span class="chk">✓</span> Reachable · up to date</div>
         </div>
       </li>
     </ol>
