@@ -69,6 +69,18 @@
   .steps h4{font-size:1.08rem;margin-bottom:5px}
   .steps p{color:var(--muted);font-size:.96rem}
   .steps strong{color:var(--txt);font-weight:600}
+  .steps li{flex-wrap:wrap;align-items:center}
+  .steps li>.txt{flex:1;min-width:210px}
+  .dlg{background:#ececed;color:#1d1d1f;border-radius:14px;padding:15px 13px;width:208px;text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.3);flex:0 0 auto;margin:4px auto}
+  .dlg .ic{width:42px;height:42px;margin:0 auto 9px;position:relative}
+  .dlg .ic svg{width:42px;height:42px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .dlg .ic .rec{position:absolute;right:-3px;bottom:-3px;width:19px;height:19px;background:#ff3b30;border-radius:5px;border:2px solid #ececed}
+  .dlg .ic .rec::after{content:"";position:absolute;inset:5px;border:2px solid #fff;border-radius:50%}
+  .dlg .t{font-weight:600;font-size:.82rem;line-height:1.3;margin-bottom:4px}
+  .dlg .s{font-size:.7rem;color:#5a5a5e;line-height:1.35;margin-bottom:9px}
+  .dlg .b{font-size:.74rem;font-weight:500;padding:.34rem;border-radius:7px;background:#dcdcde;color:#1d1d1f;margin-top:6px}
+  .dlg .b.go{background:#0a84ff;color:#fff}
   .band{background:linear-gradient(135deg,rgba(31,163,154,.13),rgba(31,163,154,.03));border:1px solid rgba(31,163,154,.25);
     border-radius:20px;padding:44px}
   .band h2{margin-bottom:12px}
@@ -161,16 +173,30 @@
       </li>
       <li>
         <span class="badge">2</span>
-        <div>
+        <div class="txt">
           <h4>Allow Screen Recording</h4>
           <p>On first launch, Veduta's welcome window asks for Screen Recording. Click <strong>Allow</strong>, then <strong>Open System Settings</strong>, and switch <strong>Veduta on</strong> under Privacy &amp; Security → Screen Recording. Quit and reopen Veduta once so macOS applies it.</p>
+        </div>
+        <div class="dlg">
+          <div class="ic"><svg viewBox="0 0 24 24" style="stroke:#d99b2e"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span class="rec"></span></div>
+          <div class="t">Screen Recording</div>
+          <div class="s">“Veduta” would like to record this screen.</div>
+          <div class="b go">Open System Settings</div>
+          <div class="b">Deny</div>
         </div>
       </li>
       <li>
         <span class="badge">3</span>
-        <div>
+        <div class="txt">
           <h4>Allow direct capture</h4>
           <p>When macOS asks Veduta to <em>“bypass the private window picker”</em>, click <strong>Allow</strong>. That lets Veduta capture your whole screen on schedule, without you choosing a window each time. It's expected — and only Veduta is doing it.</p>
+        </div>
+        <div class="dlg">
+          <div class="ic"><svg viewBox="0 0 24 24" style="stroke:#0a84ff"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg><span class="rec"></span></div>
+          <div class="t">Bypass the picker?</div>
+          <div class="s">Directly access your screen on schedule.</div>
+          <div class="b go">Allow</div>
+          <div class="b">Open System Settings</div>
         </div>
       </li>
       <li>
