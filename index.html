@@ -204,9 +204,12 @@
   .faq summary::-webkit-details-marker{display:none}
   .faq summary::after{content:"";width:10px;height:10px;border-right:2px solid var(--teal-bright);border-bottom:2px solid var(--teal-bright);
     transform:rotate(45deg);transition:transform .25s ease;flex:0 0 auto;margin-bottom:4px}
-  .faq details[open] summary{color:var(--teal-bright)}
-  .faq details[open] summary::after{transform:rotate(-135deg);margin-bottom:-4px}
-  .faq .ans{padding:0 22px 20px;color:var(--muted);font-size:.97rem;text-wrap:pretty}
+  .faq:not(.faqjs) details[open] summary,
+  .faq.faqjs details.o summary{color:var(--teal-bright)}
+  .faq:not(.faqjs) details[open] summary::after,
+  .faq.faqjs details.o summary::after{transform:rotate(-135deg);margin-bottom:-4px}
+  .faq .ans{overflow:hidden;color:var(--muted);font-size:.97rem;text-wrap:pretty}
+  .faq .ans-i{padding:2px 22px 20px}
   .faq .ans strong{color:var(--txt);font-weight:600}
 
   /* ---- Final CTA ---- */
@@ -240,6 +243,7 @@
     .js .reveal-stagger.in>*:nth-child(6){transition-delay:.35s}
     .js .reveal-scale{opacity:0;transform:scale(.96) translateY(14px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
     .js .reveal-scale.in{opacity:1;transform:none}
+    .faq .ans{transition:height .34s cubic-bezier(.16,1,.3,1)}
   }
   @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 </style>
@@ -317,6 +321,11 @@
         <p>Auto-pauses when a password manager or app you choose is in front. A global pause hotkey is always a keystroke away. It only ever captures the screen — never your mic or camera.</p>
       </div>
       <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="12" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg></div>
+        <h3>On your schedule</h3>
+        <p>Capture every few seconds or every few minutes — you set the interval. A live countdown shows the next shot, and you can change the pace or pause whenever you like.</p>
+      </div>
+      <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><line x1="22" x2="2" y1="12" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg></div>
         <h3>My folder, my storage</h3>
         <p>Point it at a NAS share or any local folder. Choose HEIC, JPEG or PNG, set a retention limit, and keep a free-disk floor so it never fills your drive.</p>
@@ -324,7 +333,7 @@
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M9.94 14.06A2 2 0 0 0 8.5 12.62l-5.14-1.32a.5.5 0 0 1 0-.96L8.5 9.02A2 2 0 0 0 9.94 7.58l1.32-5.14a.5.5 0 0 1 .96 0l1.32 5.14a2 2 0 0 0 1.44 1.44l5.14 1.32a.5.5 0 0 1 0 .96l-5.14 1.32a2 2 0 0 0-1.44 1.44l-1.32 5.14a.5.5 0 0 1-.96 0z"/><path d="M19 16v4"/><path d="M17 18h4"/></svg></div>
         <h3>Set-and-forget</h3>
-        <p>Lives in the menu bar with a live countdown and capture count. Launches at login and updates itself with signed, automatic releases — no babysitting.</p>
+        <p>Lives quietly in the menu bar with your capture count at a glance. Launches at login and updates itself with signed, automatic releases — no babysitting.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div>
@@ -482,23 +491,23 @@
     <div class="faq reveal">
       <details>
         <summary>Is it a subscription?</summary>
-        <div class="ans">No. Screenlapse is a <strong>one-time purchase</strong> — pay once and it's yours, including updates. There's nothing to renew and no recurring charge.</div>
+        <div class="ans"><div class="ans-i">No. Screenlapse is a <strong>one-time purchase</strong> — pay once and it's yours, including updates. There's nothing to renew and no recurring charge.</div></div>
       </details>
       <details>
         <summary>Where do my screenshots go?</summary>
-        <div class="ans">To <strong>a folder you choose</strong> — a local folder on your Mac or a NAS share like <code>smb://nas.local/Screenshots</code>. They're saved as standard HEIC, JPEG or PNG files you can open, move and back up anywhere.</div>
+        <div class="ans"><div class="ans-i">To <strong>a folder you choose</strong> — a local folder on your Mac or a NAS share like <code>smb://nas.local/Screenshots</code>. They're saved as standard HEIC, JPEG or PNG files you can open, move and back up anywhere.</div></div>
       </details>
       <details>
         <summary>Does it use the cloud?</summary>
-        <div class="ans">No. There's <strong>no account, no cloud service and no telemetry</strong>. Nothing leaves your Mac except the frames it writes to the destination you picked. Screenlapse can't see your captures, and neither can we.</div>
+        <div class="ans"><div class="ans-i">No. There's <strong>no account, no cloud service and no telemetry</strong>. Nothing leaves your Mac except the frames it writes to the destination you picked. Screenlapse can't see your captures, and neither can we.</div></div>
       </details>
       <details>
         <summary>Will it slow down my Mac?</summary>
-        <div class="ans">No. It's a lightweight menu-bar app that writes frames locally in the background and uploads them on its own schedule. HEIC keeps files small, and an optional resolution cap and free-disk floor keep it gentle on your storage.</div>
+        <div class="ans"><div class="ans-i">No. It's a lightweight menu-bar app that writes frames locally in the background and uploads them on its own schedule. HEIC keeps files small, and an optional resolution cap and free-disk floor keep it gentle on your storage.</div></div>
       </details>
       <details>
         <summary>What happens after the 14-day trial?</summary>
-        <div class="ans">You'll have tried every feature, free. To keep capturing, you buy Screenlapse once — <strong>$19 at launch</strong> ($29 afterwards), no subscription. Your existing captures are plain files in your folder, so they're always yours regardless.</div>
+        <div class="ans"><div class="ans-i">You'll have tried every feature, free. To keep capturing, you buy Screenlapse once — <strong>$19 at launch</strong> ($29 afterwards), no subscription. Your existing captures are plain files in your folder, so they're always yours regardless.</div></div>
       </details>
     </div>
   </section>
@@ -535,6 +544,44 @@
     onScroll();
     window.addEventListener('scroll',onScroll,{passive:true});
   }
+})();
+
+/* Smooth FAQ expand / collapse (height animation; native + accessible fallback) */
+(function(){
+  var faq=document.querySelector('.faq');
+  if(!faq) return;
+  faq.classList.add('faqjs');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  faq.querySelectorAll('details').forEach(function(d){
+    var summary=d.querySelector('summary');
+    var ans=d.querySelector('.ans');
+    if(!summary||!ans) return;
+    if(d.open) d.classList.add('o');
+    summary.addEventListener('click',function(e){
+      if(reduce.matches){ d.classList.toggle('o',!d.open); return; }
+      if(d.dataset.anim) return;
+      e.preventDefault();
+      var closing=d.open;
+      d.dataset.anim='1';
+      d.classList.toggle('o',!closing);
+      function onEnd(ev){
+        if(ev.propertyName!=='height') return;
+        ans.removeEventListener('transitionend',onEnd);
+        ans.style.height='';
+        if(closing) d.open=false;
+        delete d.dataset.anim;
+      }
+      ans.addEventListener('transitionend',onEnd);
+      if(closing){
+        ans.style.height=ans.scrollHeight+'px';
+        requestAnimationFrame(function(){ ans.style.height='0px'; });
+      }else{
+        d.open=true;
+        ans.style.height='0px';
+        requestAnimationFrame(function(){ ans.style.height=ans.scrollHeight+'px'; });
+      }
+    });
+  });
 })();
 </script>
 </body>
