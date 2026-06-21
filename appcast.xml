@@ -3,6 +3,44 @@
     <channel>
         <title>Screenlapse</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Sun, 21 Jun 2026 20:21:12 +0200</pubDate>
+            <sparkle:version>202606212020</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Screenlapse 1.1</h3>
+<ul>
+<li>license: point Buy button at the Lemon Squeezy checkout</li>
+<li>release: production license public key</li>
+<li>build: regenerate xcodeproj with licensing sources</li>
+<li>style: drop unused AppKit import in LicensingPopover</li>
+<li>build: release.sh refuses to ship the dev license key</li>
+<li>feat(app): popover trial chip + calm trial-ended card</li>
+<li>feat(app): Settings ▸ License tab (status-hero direction)</li>
+<li>feat(app): pause capture when trial expired (delivery unaffected)</li>
+<li>feat(app): own EntitlementManager on AppModel; Settings tab selection</li>
+<li>feat(app): EntitlementManager observable</li>
+<li>feat(app): Keychain trial/license stores + bundled-key config</li>
+<li>feat(app): device-local Keychain wrapper</li>
+<li>feat(tooling): LicenseTool CLI, dev test public key, Info.plist SLLicensePublicKey</li>
+<li>feat(core): entitlement state machine</li>
+<li>feat(core): trial clock with monotonic anti-rollback</li>
+<li>feat(core): Ed25519 license signer + verifier</li>
+<li>feat(core): License payload, VerifiedLicense, LicenseError</li>
+<li>feat(core): Base64URL codec for license tokens</li>
+<li>release.sh: publish installer to GitHub Releases for download counts</li>
+<li>docs: trial + licensing implementation plan</li>
+<li>docs: refine licensing spec — soft watermark + no-subscription copy</li>
+<li>docs: trial + licensing design spec</li>
+<li>Changelog page: add favicon links to the template</li>
+</ul>
+]]></description>
+            <enclosure url="https://screenlapse.net/Screenlapse-1.1.zip" length="1976843" type="application/octet-stream" sparkle:edSignature="wXm9bFmql5pL/zlIrn+oqrCLqk2LojPZWMQS30ZJHkCiQit2+eoWl0gY7WTorFCUsYn3S6xS0e1KMKTca321Ag=="/>
+            <sparkle:deltas>
+                <enclosure url="https://screenlapse.net/Screenlapse202606212020-202606211028.delta" sparkle:deltaFrom="202606211028" length="234462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TSRxhZvv/zneGV1rQNF99IKXRjPxU/6fqtCdfT2dNx8PFjR1alxSvHB+kgmksVnmkqydRQJonpmjbPVUG53YAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Sun, 21 Jun 2026 10:29:08 +0200</pubDate>
             <sparkle:version>202606211028</sparkle:version>

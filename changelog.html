@@ -51,6 +51,32 @@
     <p>Everything that's changed in Screenlapse, newest first.</p>
   </header>
   <main>
+<h2 class="rel">Screenlapse 1.1<span class="date">2026-06-21</span></h2>
+<ul>
+<li>license: point Buy button at the Lemon Squeezy checkout</li>
+<li>release: production license public key</li>
+<li>build: regenerate xcodeproj with licensing sources</li>
+<li>style: drop unused AppKit import in LicensingPopover</li>
+<li>build: release.sh refuses to ship the dev license key</li>
+<li>feat(app): popover trial chip + calm trial-ended card</li>
+<li>feat(app): Settings ▸ License tab (status-hero direction)</li>
+<li>feat(app): pause capture when trial expired (delivery unaffected)</li>
+<li>feat(app): own EntitlementManager on AppModel; Settings tab selection</li>
+<li>feat(app): EntitlementManager observable</li>
+<li>feat(app): Keychain trial/license stores + bundled-key config</li>
+<li>feat(app): device-local Keychain wrapper</li>
+<li>feat(tooling): LicenseTool CLI, dev test public key, Info.plist SLLicensePublicKey</li>
+<li>feat(core): entitlement state machine</li>
+<li>feat(core): trial clock with monotonic anti-rollback</li>
+<li>feat(core): Ed25519 license signer + verifier</li>
+<li>feat(core): License payload, VerifiedLicense, LicenseError</li>
+<li>feat(core): Base64URL codec for license tokens</li>
+<li>release.sh: publish installer to GitHub Releases for download counts</li>
+<li>docs: trial + licensing implementation plan</li>
+<li>docs: refine licensing spec — soft watermark + no-subscription copy</li>
+<li>docs: trial + licensing design spec</li>
+<li>Changelog page: add favicon links to the template</li>
+</ul>
 <h2 class="rel">Screenlapse 1.0<span class="date">2026-06-21</span></h2>
 <p>First public release.</p>
 <h3>Added</h3>
