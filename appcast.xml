@@ -4,6 +4,17 @@
         <title>Veduta</title>
         <item>
             <title>1.0</title>
+            <pubDate>Sun, 21 Jun 2026 09:22:37 +0200</pubDate>
+            <sparkle:version>202606210921</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://screenlapse.net/Screenlapse-1.0.zip" length="1876861" type="application/octet-stream" sparkle:edSignature="z/VTgxwEReh1OfU21Ft0Q8S6i3/s4lFI+qjsYsEaertlg2nRo0YzdgI/IQPjigIUPmkRgNVnQggWh+G0QWIWDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://screenlapse.net/Screenlapse202606210921-202606210021.delta" sparkle:deltaFrom="202606210021" length="374766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="83w2/7S+yEs+tYvodky+UmfqqXCodop+ueBWnDv4+eyOO4N59Y5Eifppbdk9EpwWcg2y1xuo9hkRP/LBcjL+Dw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Sun, 21 Jun 2026 09:09:44 +0200</pubDate>
             <sparkle:version>202606210908</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -20,14 +31,6 @@
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://screenlapse.net/Veduta-1.0.zip" length="1873214" type="application/octet-stream" sparkle:edSignature="kGaMwsT8+wWB+W0+Jc62vFjHeoogSf9FXrbxtFBvdRp18pzkEMYmO7t/4Jo/skW8pFX9TolR+FFvop2B5C6SBw=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Sat, 20 Jun 2026 20:32:11 +0200</pubDate>
-            <sparkle:version>202606202031</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://denixoid.github.io/veduta-releases/Veduta-1.0.zip" length="1873146" type="application/octet-stream" sparkle:edSignature="69VLVdfBLYEPF/Ptcoka/2WkaDs4UEm0goYdLPfx8g4+6eInVF2P0/XuOZ393bMQnrgscqIDRTcg4K8jlBIPDg=="/>
         </item>
     </channel>
 </rss>
