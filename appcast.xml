@@ -40,24 +40,5 @@
                 <enclosure url="https://screenlapse.net/Screenlapse202606212020-202606211028.delta" sparkle:deltaFrom="202606211028" length="234462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TSRxhZvv/zneGV1rQNF99IKXRjPxU/6fqtCdfT2dNx8PFjR1alxSvHB+kgmksVnmkqydRQJonpmjbPVUG53YAw=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Sun, 21 Jun 2026 10:29:08 +0200</pubDate>
-            <sparkle:version>202606211028</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Screenlapse 1.0</h3>
-<p><strong>Added</strong></p>
-<ul>
-<li>Scheduled screen capture on a configurable interval, delivered to a folder you choose — a NAS share or any local folder.</li>
-<li>Reliable delivery: each frame is written to your Mac first, then copied; if the destination goes offline, captures queue locally and upload automatically when it returns.</li>
-<li>Capture all displays separately, a single display, or one stitched panorama — as HEIC, JPEG, or PNG.</li>
-<li>Privacy controls: auto-pause while chosen apps (password managers, banking, …) are frontmost, a global pause hotkey, retention limits, and a free-disk floor.</li>
-<li>Native menu-bar app with a live countdown and capture count, a guided first-run welcome, and a tabbed Settings window.</li>
-<li>Launch at login and automatic, signed updates.</li>
-</ul>
-]]></description>
-            <enclosure url="https://screenlapse.net/Screenlapse-1.0.zip" length="1876889" type="application/octet-stream" sparkle:edSignature="jCGOwdHSpnjGG01z5jckPWvDGvwI3lbvNI/Do7+JbQ1nOXidifAOegn7jdSyO6FxwL02BACbaSZp0ypfbRy1Dw=="/>
-        </item>
     </channel>
 </rss>
